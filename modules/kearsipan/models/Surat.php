@@ -63,7 +63,7 @@ class Surat extends \yii\db\ActiveRecord
                 'class' => 'mdm\upload\UploadBehavior',
                 'attribute' => 'image', // required, use to receive input file
                 'savedAttribute' => 'image_id', // optional, use to link model with saved file.
-                'uploadPath' => '@app/modules/kearsipan/image/upload', // saved directory. default to '@runtime/upload'
+                'uploadPath' => '@webroot/images/upload', // saved directory. default to '@runtime/upload'
                 'autoSave' => true, // when true then uploaded file will be save before ActiveRecord::save()
                 'autoDelete' => true, // when true then uploaded file will deleted before ActiveRecord::delete()
             ],
