@@ -34,7 +34,7 @@ $this->params['breadcrumbs'][] = $this->title;
     </section><!-- /.content -->
 </div>
 <style>
-    .btn {
+    .content .btn {
         margin-top: 12px;
         height: 223px;
         border-radius: 50% 50%;

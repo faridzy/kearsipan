@@ -12,6 +12,9 @@ $config = [
         'file' => 'mdm/upload/FileController', // use to show or download file
     ],
     'modules' =>  [
+        'gridview' =>  [
+            'class' => '\kartik\grid\Module'
+        ],
         'treemanager' =>  [
             'class' => '\kartik\tree\Module',
             // other module settings, refer detailed documentation
@@ -32,7 +35,12 @@ $config = [
         'user' => [
             'class' => 'dektrium\user\Module',
             // 'enableUnconfirmedLogin' => true,
-            'enableConfirmation' => false,
+            'enableUnconfirmedLogin' => true,
+            'confirmWithin' => 21600,
+            'cost' => 12,
+            'mailer' => [
+                'sender' => ['no-reply@kersipan.dev' => 'My Company']
+            ],
             'admins' => ['julian'],
             // Yii2 User Controllers Overrides
             'controllerMap' => [
@@ -62,8 +70,8 @@ $config = [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                   // '@dektrium/rbac/views' => '@vendor/cinghie/yii2-user-extended/views',
-                   // '@dektrium/user/views' => '@vendor/cinghie/yii2-user-extended/views',
+                   '@dektrium/rbac/views' => '@vendor/cinghie/yii2-user-extended/views',
+                   '@dektrium/user/views' => '@vendor/cinghie/yii2-user-extended/views',
                     '@dektrium/user/views/security' => '@app/views/security',
                     '@app/views' => '@app/modules/custom'
                 ],

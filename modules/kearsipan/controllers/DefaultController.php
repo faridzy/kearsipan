@@ -64,4 +64,12 @@ class DefaultController extends Controller {
         return $this->render('petunjuk-penggunaan');
     }
 
+    public function actionKuis() {
+        return $this->render('kuis');
+    }
+
+    public function actionProfile() {
+        return $this->render('profile');
+    }
+
 }
