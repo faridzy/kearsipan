@@ -1,3 +1,6 @@
+<?php
+use yii\helpers\Html;
+?>
 <aside class="main-sidebar">
 
     <section class="sidebar">
@@ -15,6 +18,16 @@
                 </div>
             </div>
         <?php endif ?>
+        <div class="user-panel">
+            <div class="row">
+                <div class="col-xs-6">
+                   <?= Html::img('@web/images/logo_unesa.png',['class'=>'img-responsive','alt'=>'Logo Unesa']) ?> 
+                </div>
+                <div class="col-xs-6">
+                    <?= Html::img('@web/images/logo_smkn1_jombang.png',['class'=>'img-responsive','alt'=>'Logo SMKN 1 Jombang']) ?>
+                </div>
+            </div>
+        </div>
         <?=
         dmstr\widgets\Menu::widget(
                 [

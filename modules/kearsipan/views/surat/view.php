@@ -3,6 +3,7 @@
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\DetailView;
+use mdm\upload\FileModel;
 
 /* @var $this yii\web\View */
 /* @var $model app\models\Surat */
@@ -10,6 +11,14 @@ use yii\widgets\DetailView;
 $this->title = $model->nama;
 $this->params['breadcrumbs'][] = ['label' => 'Surats', 'url' => ['index']];
 $this->params['breadcrumbs'][] = $this->title;
+$img = FileModel::findOne($model->image_id);
+if ($img) {
+    $temp = pathinfo($img->filename);
+    $dir = substr($temp['basename'], 0, 2);
+    $url = Yii::getAlias('@web/images/upload/'.$dir.'/').$temp['basename'];
+} else {
+    $url = '';
+}
 ?>
 <div class="surat-view">
 
@@ -42,7 +51,8 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'label' => 'Image',
                 'format' => 'raw',
-                'value' => Html::img(['/file','id'=>$model->image_id],['class'=>'img-responsive'])
+                // 'value' => Html::img(['/file','id'=>$model->image_id],['class'=>'img-responsive'])
+                'value' => Html::img($url,['class'=>'img-responsive'])
             ],
             'created_at',
             'updated_at',
