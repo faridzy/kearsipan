@@ -70,8 +70,8 @@ $config = [
         'view' => [
             'theme' => [
                 'pathMap' => [
-                   '@dektrium/rbac/views' => '@vendor/cinghie/yii2-user-extended/views',
-                   '@dektrium/user/views' => '@vendor/cinghie/yii2-user-extended/views',
+                    '@dektrium/rbac/views' => '@app/modules/custom/views',
+                    '@dektrium/user/views' => '@app/modules/custom/views',
                     '@dektrium/user/views/security' => '@app/views/security',
                     '@app/views' => '@app/modules/custom'
                 ],
