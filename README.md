@@ -9,7 +9,7 @@ Kebutuhan Sistem :
 Cara memasang Media Kearsipan pada sistem sebagai berikut :
 - Di console/command line ketik 'git clone https://github.com/picobug/kearsipan.git'
 - Ketik 'cd kearsipan' dan lakukan perintah 'composer install'
-- Import table database 'yii_kearsipan.sql' pada MySQL sistem.
+- Import table database 'julio_kearsipan.sql' pada MySQL sistem.
 - Ubah konfigurasi database di file 'config/db.php'
 - Masuk pada browser dan akses lokasi media kearsipan di pasang
 - Klik pilihan 'Sign Up' isi data sesuai keperuan, namun untuk username yang pertama isi 'adminarsip'
