@@ -24,7 +24,7 @@ class DefaultController extends Controller {
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin','siswa'],
+                        'roles' => ['admin','siswa','@'],
                     ],
                 ],
             ],

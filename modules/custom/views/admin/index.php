@@ -95,7 +95,7 @@ $this->registerJs('
             } else if(selectedId.length>1){
                 alert("'.Yii::t("userextended", "Select only 1 item").'");
             } else {
-                var url = "'.Url::to(['/user/profile/show']).'&id="+selectedId[0];
+                var url = "'.Url::to(['/user/profile/show']).'?&id="+selectedId[0];
                 window.location.href= url;
             }
         });

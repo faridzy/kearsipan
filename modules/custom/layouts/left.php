@@ -45,6 +45,7 @@ use yii\helpers\Html;
                                 ['label'=>'Site Setting','icon'=>'fa fa-gear','url'=>['/kearsipan/site/settings']],
                                 ['label'=>'Kategori Setting','icon'=>'fa fa-gear','url'=>['/kearsipan/kategori']],
                                 ['label'=>'Arsip Surat','icon'=>'fa fa-gear','url'=>['/kearsipan/surat']],
+                                ['label'=>'User Admin','icon'=>'fa fa-gear','url'=>['/user/admin']],
                             ]
                         ],
                         ['label' => 'Gii', 'visible' => false, 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],

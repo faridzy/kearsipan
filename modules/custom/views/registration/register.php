@@ -13,6 +13,7 @@
 use yii\captcha\Captcha;
 use yii\helpers\Html;
 use yii\widgets\ActiveForm;
+use kartik\widgets\DatePicker;
 
 $this->title = Yii::t('user', 'Sign up');
 $this->params['breadcrumbs'][] = $this->title;
@@ -47,7 +48,12 @@ $this->params['breadcrumbs'][] = $this->title;
 
                         <?= $form->field($model, 'lastname') ?>
 
-                        <?= $form->field($model, 'birthday') ?>
+                        <?= $form->field($model, 'birthday')->widget(DatePicker::classname(),[
+                            'pluginOptions' => [
+                                'format' => 'yyyy-mm-dd',
+                                'todayHighlight' => true
+                            ]
+                        ]) ?>
 
                         <?php if ($module->enableGeneratingPassword == false): ?>
                             <?= $form->field($model, 'password')->passwordInput() ?>

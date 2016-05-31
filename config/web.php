@@ -29,22 +29,22 @@ $config = [
         // Yii2 RBAC
         'rbac' => [
             'class' => 'dektrium\rbac\Module',
-            'admins' => ['julian'],
+            'admins' => ['admin'],
         ],
         // Yii2 User
         'user' => [
             'class' => 'dektrium\user\Module',
-            // 'enableUnconfirmedLogin' => true,
             'enableUnconfirmedLogin' => true,
+            'enableConfirmation' =>false,
             'confirmWithin' => 21600,
             'cost' => 12,
             'mailer' => [
                 'sender' => ['no-reply@kersipan.dev' => 'My Company']
             ],
-            'admins' => ['julian'],
+            'admins' => ['adminarsip'],
             // Yii2 User Controllers Overrides
             'controllerMap' => [
-                'admin' => 'cinghie\yii2userextended\controllers\AdminController',
+                'admin' => 'app\controllers\AdminController',
                 'settings' => 'cinghie\yii2userextended\controllers\SettingsController',
             ],
             // Yii2 User Models Overrides
