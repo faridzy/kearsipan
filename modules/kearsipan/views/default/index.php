@@ -15,7 +15,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>Pencarian berdasarkan huruf</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fa fa-sort-alpha-asc"></i>
                     </div>
                     <?= Html::a('More Info '.Html::tag('i','',['class'=>'fa fa-arror-circle-right']),['/kearsipan/arsip?kode=abjad'],['class'=>'small-box-footer']) ?>
                 </div>
@@ -27,7 +27,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>Pencarian berdasarkan wilayah</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fa fa-map-marker"></i>
                     </div>
                     <?= Html::a(
                             'More Info '.Html::tag('i','',['class'=>'fa fa-arrow-circle-right']),
@@ -43,7 +43,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>Pencarian dengan Nomor Arsip</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fa fa-sort-numeric-asc"></i>
                     </div>
                     <?= Html::a(
                             'More Info '.Html::tag('i','',['class'=>'fa fa-arrow-circle-right']),
@@ -59,7 +59,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>Pencarian dengan Kategori Arsip</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fa fa-folder-open"></i>
                     </div>
                     <?= Html::a(
                             'More Info '.Html::tag('i','',['class'=>'fa fa-arrow-circle-right']),
@@ -75,7 +75,7 @@ $this->params['breadcrumbs'][] = $this->title;
                         <p>Pencarian dengan Tanggal Arsip</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-stats-bars"></i>
+                        <i class="fa fa-calendar"></i>
                     </div>
                     <?= Html::a(
                             'More Info '.Html::tag('i','',['class'=>'fa fa-arrow-circle-right']),

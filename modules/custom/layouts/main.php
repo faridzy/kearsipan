@@ -35,7 +35,7 @@ if (in_array(Yii::$app->controller->action->id, ['login','register','error'])) {
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
     </head>
-    <body class="hold-transition skin-blue sidebar-mini">
+    <body class="hold-transition skin-blue-light sidebar-mini">
     <?php $this->beginBody() ?>
     <div class="wrapper">
 
