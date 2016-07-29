@@ -19,19 +19,10 @@ class KategoriController extends Controller {
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
-//            'verbs' => [
-//                'class' => VerbFilter::className(),
-//                'actions' => [
-//                    'delete' => ['post'],
-//                    'delete-multiple' => ['post'],
-//                    'confirm' => ['post'],
-//                    'block' => ['post'],
-//                ],
-//            ],
         ];
     }
 

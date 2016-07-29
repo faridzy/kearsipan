@@ -62,11 +62,12 @@ use yii\web\JsExpression;
     ]) ?>
 
     <?= $form->field($model, 'image')->widget(FileInput::classname(), [
-        'options' => ['accept' => 'image/*'],
+        'options' => ['accept' => 'application/pdf'],
         'pluginOptions' => [
             'showCaption' => true,
             'showRemove' => true,
-            'showUpload' => false
+            'showUpload' => false,
+            'previewFileType' => 'any'
         ]
     ]); ?>
 

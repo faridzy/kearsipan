@@ -20,8 +20,8 @@ class Kategori extends \kartik\tree\models\Tree
      */
     public function isDisabled()
     {
-        if (!Yii::$app->user->isGuest && !Yii::$app->user->identity->isAdmin) {
-            return true;
+        if (!Yii::$app->user->isGuest) {
+            return false;
         }
         return parent::isDisabled();
     }

@@ -31,7 +31,7 @@ class SuratController extends Controller
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin','siswa'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],

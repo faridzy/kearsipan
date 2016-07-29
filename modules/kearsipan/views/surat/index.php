@@ -21,10 +21,6 @@ $grid = [
             'label' => 'Kategori',
             'value' => 'kategori.name'
         ],
-        // 'kelurahan_id',
-        // 'image_id',
-        // 'created_at',
-        // 'updated_at',
 
         ['class' => 'yii\grid\ActionColumn'],
     ],
@@ -33,11 +29,8 @@ $grid = [
 <div class="surat-index">
 
     <h1><?= Html::encode($this->title) ?></h1>
-<?php if (Yii::$app->user->identity->isAdmin): ?>
     <p>
         <?= Html::a('Create Surat', ['create'], ['class' => 'btn btn-success']) ?>
     </p>
-    
-<?php endif ?>
     <?= GridView::widget($grid); ?>
 </div>
