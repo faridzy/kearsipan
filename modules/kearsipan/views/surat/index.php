@@ -21,6 +21,10 @@ $grid = [
             'label' => 'Kategori',
             'value' => 'kategori.name'
         ],
+        // 'kelurahan_id',
+        // 'image_id',
+        // 'created_at',
+        // 'updated_at',
 
         ['class' => 'yii\grid\ActionColumn'],
     ],

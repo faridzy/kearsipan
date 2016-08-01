@@ -47,12 +47,11 @@ if ($img) {
                 'value' => $model->kategori->name
             ],
             'kelurahan_id',
-            'image_id',
             [
-                'label' => 'Image',
+                'label' => 'Dokumen PDF',
                 'format' => 'raw',
                 // 'value' => Html::img(['/file','id'=>$model->image_id],['class'=>'img-responsive'])
-                'value' => Html::img($url,['class'=>'img-responsive'])
+                'value' => Html::a('Show Dokument',$url,['class'=>'img-responsive','target'=>'_blank'])
             ],
             'created_at',
             'updated_at',

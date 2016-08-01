@@ -27,7 +27,7 @@ class ArsipController extends Controller {
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin','siswa'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],

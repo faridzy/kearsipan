@@ -4,7 +4,7 @@ use yii\helpers\Html;
 /* @var $this \yii\web\View */
 /* @var $content string */
 
-if (in_array(Yii::$app->controller->action->id, ['login','register','error'])) { 
+if (in_array(Yii::$app->controller->action->id, ['login','register','error','landing'])) { 
 /**
  * Do not use this code in your template. Remove it. 
  * Instead, use the code  $this->layout = '//main-login'; in your controller.

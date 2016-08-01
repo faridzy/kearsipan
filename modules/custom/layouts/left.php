@@ -39,11 +39,11 @@ use yii\helpers\Html;
                         [
                             'label' => 'Kearsipan',
                             'icon' => 'fa fa-flag',
+                            'visible' => !Yii::$app->user->isGuest,
                             'url' => '#',
                             'items' => [
                                 ['label'=>'Kategori Setting','icon'=>'fa fa-gear','url'=>['/kearsipan/kategori']],
                                 ['label'=>'Arsip Surat','icon'=>'fa fa-gear','url'=>['/kearsipan/surat']],
-
                             ]
                         ],
                         [
@@ -57,7 +57,8 @@ use yii\helpers\Html;
                             ]
                         ],
                         ['label' => 'Gii', 'visible' => false, 'icon' => 'fa fa-file-code-o', 'url' => ['/gii']],
-                        ['label' => 'Debug', 'visible' => false, 'icon' => 'fa fa-dashboard', 'url' => ['/debug']],
+                        ['label' => 'Debug', 'visible' => false, 'icon' => 'fa fa-dashboard', 'url' => ['/debug']]
+                        
                     ],
                 ]
         )

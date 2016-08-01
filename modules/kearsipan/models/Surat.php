@@ -57,7 +57,7 @@ class Surat extends \yii\db\ActiveRecord
                 'class' => TimestampBehavior::className(),
                 'createdAtAttribute' => 'created_at',
                 'updatedAtAttribute' => 'updated_at',
-                'value' => new Expression('NOW()'),
+                'value' => new Expression(date('Y-m-d')),
             ],
             [
                 'class' => 'mdm\upload\UploadBehavior',
@@ -83,6 +83,7 @@ class Surat extends \yii\db\ActiveRecord
             'kategori_id' => 'Kategori ID',
             'kelurahan_id' => 'Kelurahan ID',
             'image_id' => 'Image ID',
+            'image' => 'Dokumen PDF',
             'created_at' => 'Created At',
             'updated_at' => 'Updated At',
         ];

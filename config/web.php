@@ -7,7 +7,7 @@ $config = [
     'name' => 'Sistem Kearsipan',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'defaultRoute' => 'kearsipan/default/home',
+    'defaultRoute' => 'kearsipan/default/landing',
     'controllerMap' => [
         'file' => 'mdm/upload/FileController', // use to show or download file
     ],

@@ -2,6 +2,7 @@
 
 namespace app\modules\kearsipan\controllers;
 
+use Yii;
 use yii\web\Controller;
 use yii\filters\AccessControl;
 use yii\filters\AccessRule;
@@ -18,13 +19,14 @@ class DefaultController extends Controller {
         return [
             'access' => [
                 'class' => AccessControl::className(),
+                'only' => ['index','home','kuis','profile','peraturan-index','tujuan-pembelajaran','petunjuk-penggunaan'],
                 'ruleConfig' => [
                     'class' => AccessRule::className(),
                 ],
                 'rules' => [
                     [
                         'allow' => true,
-                        'roles' => ['admin','siswa','@'],
+                        'roles' => ['@'],
                     ],
                 ],
             ],
@@ -38,6 +40,13 @@ class DefaultController extends Controller {
 //                ],
 //            ],
         ];
+    }
+
+    public function actionLanding() {
+        if (!Yii::$app->user->isGuest) {
+            $this->redirect(['/kearsipan/default/home']);
+        }
+        return $this->render('landing');
     }
 
     /**

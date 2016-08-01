@@ -66,8 +66,7 @@ use yii\web\JsExpression;
         'pluginOptions' => [
             'showCaption' => true,
             'showRemove' => true,
-            'showUpload' => false,
-            'previewFileType' => 'any'
+            'showUpload' => false
         ]
     ]); ?>
 

@@ -23,6 +23,15 @@ class KategoriController extends Controller {
                     ],
                 ],
             ],
+//            'verbs' => [
+//                'class' => VerbFilter::className(),
+//                'actions' => [
+//                    'delete' => ['post'],
+//                    'delete-multiple' => ['post'],
+//                    'confirm' => ['post'],
+//                    'block' => ['post'],
+//                ],
+//            ],
         ];
     }
 

@@ -68,7 +68,7 @@ $this->params['breadcrumbs'][] = $this->title;
             </div>
         </div>
         <div class="row">
-            <div class="col-md-4 col-md-offset-1">
+            <div class="col-md-4 col-md-offset-2">
                 <div class="small-box bg-red">
                     <div class="inner">
                         <h3><sub>Peraturan Index</sub></h3>
@@ -83,7 +83,7 @@ $this->params['breadcrumbs'][] = $this->title;
                     ); ?>
                 </div>
             </div>
-            <div class="col-md-4 col-md-offset-1">
+            <div class="col-md-4">
                 <div class="small-box bg-green">
                     <div class="inner">
                         <h3><sub>Tujuan Pembelajaran</sub></h3>
