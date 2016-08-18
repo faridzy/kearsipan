@@ -49,7 +49,7 @@ use yii\helpers\Html;
                         [
                             'label' => 'System',
                             'icon' => 'fa fa-flag',
-                            'visible' => (!Yii::$app->user->isGuest && Yii::$app->user->identity->isAdmin),
+                            'visible' => (!Yii::$app->user->isGuest && Yii::$app->user->can('admin')),
                             'url' => '#',
                             'items' => [
                                 ['label'=>'Site Setting','icon'=>'fa fa-gear','url'=>['/kearsipan/site/settings']],
